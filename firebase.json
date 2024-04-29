@@ -1,1 +1,23 @@
-{"flutter":{"platforms":{"dart":{"lib/firebase_options.dart":{"projectId":"trim-spot","configurations":{"web":"1:183226616065:web:70ccac4d870203e1deb300","windows":"1:183226616065:web:1f504032dfbad157deb300"}}}}}}
+{
+  "flutter": {
+    "platforms": {
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "trim-spot",
+          "configurations": {
+            "web": "1:183226616065:web:70ccac4d870203e1deb300",
+            "windows": "1:183226616065:web:1f504032dfbad157deb300"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

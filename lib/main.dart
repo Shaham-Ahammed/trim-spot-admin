@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:trim_spot_admin_side/blocs/buttons_bloc/decision_making_buttons_bloc.dart';
 import 'package:trim_spot_admin_side/firebase_options.dart';
-import 'package:trim_spot_admin_side/screens/home.dart';
+import 'package:trim_spot_admin_side/screens/login.dart';
 
 void main(List<String> args) async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
       darkTheme: ThemeData(),
-      home: const HomeScreen()
+      home: const LoginScreen()
     );
   }
 }
