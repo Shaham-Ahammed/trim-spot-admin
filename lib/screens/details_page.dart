@@ -10,7 +10,7 @@ import 'package:trim_spot_admin_side/widgets/detailed_view/approve_button.dart';
 import 'package:trim_spot_admin_side/widgets/detailed_view/heading_and_details.dart';
 import 'package:trim_spot_admin_side/widgets/detailed_view/images.dart';
 import 'package:trim_spot_admin_side/widgets/detailed_view/remove_button.dart';
-import 'package:trim_spot_admin_side/widgets/login/appbar.dart';
+import 'package:trim_spot_admin_side/widgets/appbar.dart';
 
 class RegistrationDetailsScreen extends StatelessWidget {
   final VerificationState shopState;

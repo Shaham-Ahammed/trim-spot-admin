@@ -17,7 +17,8 @@ class AppBarLogin extends StatelessWidget {
         children: [
           IconButton(onPressed:()=> Navigator.pop(context), icon:  const Icon(Icons.arrow_back_ios)),
           AppLogo(size: mediaqueryHeight(0.04, context)),
-          const Icon(Icons.gif_rounded,color: appBarColor,)
+          Container(height: .1,width: .1,color: Colors.transparent,)
+        
         ],
       ),
     );

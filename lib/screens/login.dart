@@ -4,9 +4,10 @@ import 'package:trim_spot_admin_side/blocs/login_bloc/login_button_bloc.dart';
 import 'package:trim_spot_admin_side/screens/home.dart';
 import 'package:trim_spot_admin_side/utils/colors.dart';
 import 'package:trim_spot_admin_side/utils/login/form_key.dart';
+import 'package:trim_spot_admin_side/utils/logo.dart';
 import 'package:trim_spot_admin_side/utils/mediaquery.dart';
 import 'package:trim_spot_admin_side/utils/page_route.dart';
-import 'package:trim_spot_admin_side/widgets/login/appbar.dart';
+import 'package:trim_spot_admin_side/widgets/appbar.dart';
 import 'package:trim_spot_admin_side/widgets/login/login_button.dart';
 import 'package:trim_spot_admin_side/widgets/login/textform_fields.dart';
 
@@ -26,10 +27,12 @@ class LoginScreen extends StatelessWidget {
         },
         child: Scaffold(
           backgroundColor: blackColor,
-          appBar: PreferredSize(
-              preferredSize:
-                  Size(double.infinity, mediaqueryHeight(0.1, context)),
-              child: const AppBarLogin()),
+          appBar: AppBar(
+            backgroundColor: appBarColor,
+            title: AppLogo(size: mediaqueryHeight(0.04, context)),
+            centerTitle: true,
+            automaticallyImplyLeading: false,
+          ),
           body: Form(
             key: loginFormKey,
             child: Column(
